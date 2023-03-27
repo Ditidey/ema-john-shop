@@ -1,0 +1,24 @@
+.product-div{
+    background-color: whitesmoke;
+    height: 500px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.product-div img{
+    height: 280px;
+    width: 290px;
+    border-radius: 8px;
+    margin: 7px;
+}
+.product-info{
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.btn-cart{
+    position: absolute;
+    margin-bottom: 0px;
+    background-color: burlywood;
+    width: 100%;
+}
