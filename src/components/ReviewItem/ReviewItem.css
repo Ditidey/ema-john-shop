@@ -1,0 +1,41 @@
+.item-container{
+    width: 571px;
+   
+    padding: 8px 23px 8px 8px;
+    border: 1px solid rgb(198, 196, 196);
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 50px;
+     display: flex;
+     align-items: center;
+}
+.item-container img{
+    width: 91px;
+    height: 91px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+.item-info{
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.item-info p{
+    margin: 0px;
+    font-weight: 400;
+     
+}
+.btn-delete{
+    background-color: rgb(249, 144, 144);
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    text-align: center;
+}
+.icon-delete{
+    color: rgb(173, 10, 10);
+    font-weight: 400;
+}
+.orange{
+    color: rgb(219, 168, 74);
+}
