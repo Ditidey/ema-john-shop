@@ -3,8 +3,9 @@ import { useState } from 'react'
  
 import './App.css'
 import Header from './components/Header/Header'
-import Shop from './components/Shop/Shop'
+ 
 import { Outlet } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
         <Header></Header>
          <Outlet />
+         <Footer></Footer>
     </div>
   )
 }

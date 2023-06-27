@@ -15,3 +15,14 @@
     border-radius: 4px;
     color: aliceblue;
 }
+.pagination{
+    text-align: center;
+    margin: 20px;
+}
+.pagination button{
+    margin-left: 5px;
+    background-color: bisque;
+}
+.pagination .selected{
+    background-color: #FF9900;
+}

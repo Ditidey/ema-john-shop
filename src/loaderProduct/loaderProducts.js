@@ -1,11 +1,19 @@
 import { getShoppingCart } from "../utilities/fakedb";
 
 const loadProducts = async() =>{
- const productsLoading = await fetch('products.json');
+    const storedCart = getShoppingCart();
+    const ids = Object.keys(storedCart);
+    console.log(ids)
+    const savedCart = [];
+    
+ const productsLoading = await fetch('https://ema-john-server-one.vercel.app/productsByIds', {
+    method:'POST',
+    headers: {'content-type': 'application/json'},
+    body: JSON.stringify(ids)
+ });
  const products = await productsLoading.json();
 
- const storedCart = getShoppingCart();
- const savedCart = [];
+ 
  for(const id in storedCart){
     const addedCart = products.find(pro => pro.id === id);
     if(addedCart){

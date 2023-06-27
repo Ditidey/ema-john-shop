@@ -1,0 +1,13 @@
+.about-div{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.div{
+    padding: 20px;
+    align-content: center;
+}
+.sec{
+    background-color: brown;
+    color: aliceblue;
+}

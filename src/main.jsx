@@ -12,6 +12,7 @@ import CheckOut from './components/CheckOut/CheckOut'
 import Signup from './components/SignUp/Signup'
 import AuthProvider from './providers/AuthProvider'
 import ProtectRoute from './routes/ProtectRoute'
+import Home from './components/Home/Home'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
+        element: <Home></Home>
+      },
+      {
+        path: '/shop',
         element: <Shop></Shop>,
+        loader: ()=>fetch('https://ema-john-server-one.vercel.app/totalProducts')
       },
       {
         path: '/orders',
