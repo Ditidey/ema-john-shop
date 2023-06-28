@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Card.css';
 import Rating from 'react-rating';
 
 const Card = () => {
+    useEffect(()=>{
+        
+    },[])
     return (
         <div>
-            <h2  style={{ marginLeft: '600px', marginTop:'50px', fontSize:'40px'}}>Popular Shops</h2>
+            <h2 className='headline' >Popular Shops</h2>
         <div className='card'>
             <div>
                 <img className='card-img' src="https://media.istockphoto.com/id/1296393834/photo/smiling-male-is-posing-with-purchases-near-shelves-in-supermarket.jpg?s=612x612&w=0&k=20&c=DxBfPJTd_RTZCOMe7FAMEp5lnKsfqLDoB2a8ic3x6og=" alt="" />

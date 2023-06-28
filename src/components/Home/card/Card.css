@@ -10,4 +10,20 @@
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
- 
+ .headline{
+    margin-left: 600px;
+     margin-top:50px; 
+     font-size:40px;
+     font-family: fantasy;
+     color: rgb(97, 230, 188);
+ }
+@media screen and (max-width: 500px) {
+    .card{
+        display: block;
+        margin: 10px;
+    }
+    .headline{
+        margin-left: 20px;
+    }
+    
+}

@@ -1,13 +1,44 @@
-.about-div{
+.about-div {
     display: flex;
     justify-content: space-around;
     margin: 50px;
 }
-.div{
+
+.div {
     padding: 20px;
     align-content: center;
 }
-.sec{
+
+.sec {
     background-color: brown;
     color: aliceblue;
+}
+
+.headline {
+    margin-left: 600px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: fantasy;
+    color: rgb(97, 230, 188);
+}
+
+.question-line {
+    margin-left: 570px;
+    font-size: 35px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .headline {
+        margin-left: 20px;
+    }
+
+    .about-div {
+        display: block;
+        margin: 10px;
+    }
+    .question-line{
+        margin-left: 20px;
+    }
 }

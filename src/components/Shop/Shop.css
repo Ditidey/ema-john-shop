@@ -26,3 +26,14 @@
 .pagination .selected{
     background-color: #FF9900;
 }
+@media screen and (max-width: 500px) {
+    .shop-container{
+        display: block;
+    }
+    .products-container{
+        display: block;
+        margin: 10px;
+        margin-left: 20px;
+        gap: 0px;
+    }
+}

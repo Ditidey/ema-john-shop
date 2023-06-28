@@ -3,7 +3,7 @@ import { getShoppingCart } from "../utilities/fakedb";
 const loadProducts = async() =>{
     const storedCart = getShoppingCart();
     const ids = Object.keys(storedCart);
-    console.log(ids)
+   //  console.log(ids)
     const savedCart = [];
     
  const productsLoading = await fetch('https://ema-john-server-one.vercel.app/productsByIds', {
@@ -15,7 +15,8 @@ const loadProducts = async() =>{
 
  
  for(const id in storedCart){
-    const addedCart = products.find(pro => pro.id === id);
+   console.log(id)
+    const addedCart = products.find(pro => pro._id == id);
     if(addedCart){
         const quantity = storedCart[id];
         addedCart.quantity = quantity;

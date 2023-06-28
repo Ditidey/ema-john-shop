@@ -1,5 +1,23 @@
-.img-class{
+.img-class {
     width: 1200px;
     height: 600px;
     padding: 20px 100px 0px 100px;
+}
+
+.div-head {
+    position: absolute;
+    top: 300px;
+    margin-left: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .img-class {
+        width: 480px;
+        height: 600px;
+        padding: 0px 10px 10px 10px;
+    }
+    .div-head{
+        margin-left: 30px;
+        top: 200px;
+    }
 }

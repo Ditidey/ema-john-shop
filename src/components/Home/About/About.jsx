@@ -7,7 +7,7 @@ import { MdLocalPhone } from 'react-icons/md'
 const About = () => {
     return (
         <div>
-            <h2 style={{ marginLeft: '600px', marginTop: '70px', fontSize: '40px' }}>Discover and Know us</h2>
+            <h2 className='headline'>Discover and Know us</h2>
             <section>
                 <div className='about-div'>
                     <div className='div'>
@@ -34,7 +34,7 @@ const About = () => {
                 </div>
             </section>
             <section className='sec'>
-                <h2 style={{ marginLeft: '570px', fontSize: '35px', padding: '20px', paddingTop: '40px' }}>Question? We are here to help you</h2>
+                <h2 className='question-line'>Question? We are here to help you</h2>
                 <div className='about-div'>
                     <div>
                         <MdLocalPhone style={{ fontSize: '30px', marginLeft: '100px', color: 'white', backgroundColor: 'red', padding: '10px' }}></MdLocalPhone>
@@ -49,7 +49,7 @@ const About = () => {
                     <div>
                         <BiLogoFacebook style={{ fontSize: '30px', marginLeft: '100px', color: 'white', backgroundColor: 'red', padding: '10px' }}></BiLogoFacebook>
                         <p style={{ color: 'Red', marginLeft: '90px' }}>Facebook</p>
-                        <p style={{marginLeft:'70px'}}>Ema John</p>
+                        <p style={{marginLeft:'90px'}}>Ema John</p>
                     </div>
                     <div>
                         <AiOutlineInstagram style={{ fontSize: '30px', marginLeft: '100px', color: 'white', backgroundColor: 'red', padding: '10px' }}></AiOutlineInstagram>
